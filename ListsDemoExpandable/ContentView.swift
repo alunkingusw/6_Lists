@@ -1,21 +1,27 @@
 //
 //  ContentView.swift
-//  ListsDemoExpandable
+//  ListsDemo
 //
 //  Created by Alun King on 10/02/2023.
 //
 
 import SwiftUI
-
+struct Artist: View{
+    let name:String
+    var body: some View{
+        Text("Name: \(name)")
+    }
+}
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        List {
+            
+                Text("Alice")
+                Text("Tamino")
+                Text("Pamina")
+            
         }
-        .padding()
+        
     }
 }
 
